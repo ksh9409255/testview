@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclerViewAdapter">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/prod_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/sample"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/prod_name"
+        android:layout_width="256dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="16dp"
+        android:text="샘플제품"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/prod_image"
+        app:layout_constraintTop_toTopOf="@+id/prod_image" />
+
+    <TextView
+        android:id="@+id/prod_model"
+        android:layout_width="256dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="16dp"
+        android:text="샘플모델명"
+        android:layout_marginTop="2dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/prod_image"
+        app:layout_constraintTop_toBottomOf="@+id/prod_name" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
